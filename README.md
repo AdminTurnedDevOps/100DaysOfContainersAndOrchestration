@@ -33,7 +33,21 @@ There's also multiple different runtimes to run containers...
 The reason for this project is to help you dive deep into all of the different avenues you can take to run containers.
 
 ## How?
+100 Days Of Containers and Orchestration will be from both a theoretical perspective and a hands-on perspective.
 
+The truth is that you cannot have one without the other.
+
+You can't implement a solution if you don't understand it or know the "why" behind it.
+
+An example of this is...
+
+Kubernetes is the latest and greatest right now and you want to learn it, but why? Why do you need to learn it in today's cloud-native world?
+
+Or beter yet, why does your organization need to use Kubernetes? Do they actually need Kubernetes? Is there another solution that gives you the same result as Kubernetes in an easier fashion?
+
+As you're going through 100 Days Of Containers and Orchestration, yes, you'll learn the technical pieces and see/use the code... but you'll learn something even better.
+
+The "why" and the "how" that'll help you in implementing a solution like containers and orchestration platforms.
 
 ## The App
 100 Days Of Containers And Orchestration will be a lot of theory and hands-on components for deploying containers and orchestration, but to deploy a container, you need an app.
