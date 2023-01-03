@@ -30,5 +30,13 @@ The reason for this project is to help you dive deep into all of the different a
 ## How?
 
 
+## The App
+100 Days Of Containers And Orchestration will be a lot of theory and hands-on components for deploying containers and orchestration, but to deploy a container, you need an app.
 
+The app that will be used is the GoWebAPI that I built. It's a web API that can be run anywhere.
+
+You can find it (here)[https://github.com/AdminTurnedDevOps/GoWebAPI]
+
+Don't worry about doing anything with the app right now as you'll learn everything that you need to do with the app throughout this project.
+## WIP
 More to come! This project is a WIP (started January 3rd, 2023).
