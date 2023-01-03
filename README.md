@@ -40,7 +40,7 @@ The reason for this project is to help you dive deep into all of the different a
 
 The app that will be used is the GoWebAPI that I built. It's a web API that can be run anywhere.
 
-You can find it !(here)[https://github.com/AdminTurnedDevOps/GoWebAPI]
+You can find it [here](https://github.com/AdminTurnedDevOps/GoWebAPI)
 
 Don't worry about doing anything with the app right now as you'll learn everything that you need to do with the app throughout this project.
 
