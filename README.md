@@ -143,5 +143,5 @@ Don't worry about doing anything with the app right now as you'll learn everythi
 - [Day 96]()
 - [Day 97]()
 - [Day 98]()
-- [Day 99)]()
+- [Day 99]()
 - [Day 100]()
