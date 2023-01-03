@@ -92,7 +92,7 @@ Don't worry about doing anything with the app right now as you'll learn everythi
 [Day 45]()
 [Day 46]()
 [Day 47]()
-[Day 48()
+[Day 48]()
 [Day 49]()
 [Day 50]()
 [Day 51]()
