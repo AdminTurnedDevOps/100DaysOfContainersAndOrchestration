@@ -1,6 +1,8 @@
 # 100DaysOfContainersAndOrchestration
 Your go-to open source repo to learn containers (Docker, Podman, etc.) and Orchestration (Kubernetes, ECS, etc.) from start to finish.
 
+[![GitHub Repo stars](https://img.shields.io/github/stars/AdminTurnedDevOps/100DaysOfContainersAndOrchestration)](https://github.com/AdminTurnedDevOps/100DaysOfContainersAndOrchestrations)
+
 ## Why?
 Containers, orchestration, and the overall landscape of running modern applications is changing.
 
