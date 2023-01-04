@@ -95,7 +95,7 @@ Don't worry about doing anything with the app right now as you'll learn everythi
 - [Day 34 - EKS with virtual kubelet]()
 - [Day 35 - Kubernetes Deployments, DaemonSets, and StatefulSets]()
 - [Day 36 - Kubernetes Namespaces]()
-- [Day 37 - Kubernetes ConfigMaps and configuration data]()
+- [Day 37 - Kubernetes ConfigMaps and RollingUpdates]()
 - [Day 38 - Kubernetes storage (PVC, PV, SC)]()
 - [Day 39 - Kubernetes networking part 1 (general k8s networking)]()
 - [Day 40 - Kubernetes networking part 2 (Service mesh and ingress)]()
