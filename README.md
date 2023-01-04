@@ -59,7 +59,7 @@ You can find it [here](https://github.com/AdminTurnedDevOps/GoWebAPI)
 Don't worry about doing anything with the app right now as you'll learn everything that you need to do with the app throughout this project.
 
 ## Days
-- [Day 1 - Why Containers And What Are They?]()
+- [Day 1 - Why Containers And What Are They?](https://github.com/AdminTurnedDevOps/100DaysOfContainersAndOrchestration/blob/main/days/day-1-Why-Containers-And-What-Are-They.md)
 - [Day 2 - Container runtimes]()
 - [Day 3 - Getting Started With Docker on Linux]()
 - [Day 4 - Building Container Images]()
