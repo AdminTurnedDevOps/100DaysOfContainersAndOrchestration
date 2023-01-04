@@ -42,3 +42,56 @@ Before the container starts, cgroups and namespaces are used for segregation and
 SELinux policies and AppArmor policies are then configured.
 
 And just like that, a container is up and running.
+
+## Docker Runtime
+
+The Docker runtime is the same thing as all other container runtimes. The above explanation of container runtimes in the **Runtime Theory** section goes for every single container runtime.
+
+There are also other container runtimes including:
+
+- Containerd
+- Podman
+- rkt
+
+and a few others outside of Docker.
+
+The reason why Docekr itself is so popular is because Docker made using containers way easier. Before Docker, we had other runtimes and engines like LXC (Linux Containers). However, Docker made using containers, container engines, and container runtimes way more flexible and consumable. Even thinking about, for example, Docker Desktop. Docker Desktop literally gives you containers right on your local computer.
+
+In short, don’t be confused by the Docker runtime or other runtimes in terms of if they’re different. They aren’t different fundamentally. Of course, the commands that you use with them will be different (and you’ll see that throughout this series).
+
+<aside>
+💡 It’s important to note that a container runtime isn’t all that Docker is. There’s also the Docker engine. For example, building a Docker image uses the Open Container Initiative (more on that coming up next) to build the image, but it’s not using the container runtime because the container isn’t running at the time of building an image. Just like the Docker Registry isn’t using the container runtime because the Docker Registry is storing a container image, not running one.
+
+Point being: There are several parts to Docker and it’s not just one blanket component.
+
+</aside>
+
+## Open Container Initiative (OCI)
+
+Remember the standard that is used for container images that was referenced in the Runtime Theory section?
+
+That’s the Open Container Initiative (OCI).
+
+OCI is the standard that containers should meet when being created. It’s the same standard that CRI-O, containerd, Podman, and Docker follow.
+
+It’s essentially a governance around what container formats should look like. How containers are built, how they should run, and how they should be distributed.
+
+Think about it like a checklist of sorts that Docker, Podman, Containerd, etc… follow when building and running containers.
+
+## Dockershim
+
+Before talking about how Kubernetes handles container runtimes, there’s one important component that should be brought up - Dockershim.
+
+Dockershim allowed Kubernetes to use Docker’s container runtime as a Kubernetes container runtime. Now, you’ll typically see either CRI-O or Containerd.
+
+The reason why it was a shim (literally a middle ground/middle man) is because Kubernetes out of the box couldn’t read the Docker container runtime.
+
+Dockershim used to be the standard for running containers in Kubernetes. However, since v1.24 of Kubernetes, it was fully removed.
+
+The reason why it was fully removed is because Dockershim, although it worked, was a middle ground. It was an extra hop/an extra job that Kubernetes had to conduct to run containers. Because of that, CRI-O and other “Kubernetes native” container runtimes are now available out of the box. The “Kubernetes native” way was, and you’ll learn about this in the next section, Container Runtime Interfaces (CRI). This, much like the other Kubernetes plugin models (you’ll learn about those later in this series), allows certain frameworks (plugins) to be a first class citizen in Kubernetes. The Docker runtime was not available for CRI and therefore was removed.
+
+## How Kubernetes Handles Container Runtimes
+
+In the previous section, you learned that the Docker runtime was removed from Kubernetes and replaced with a proper standard - Container Runtime Interface (CRI).
+
+Without a container runtime running on a Kubernetes cluster, Kubernetes wouldn’t know how to do anything with containers. Kubernetes by itself can’t start a container or stop a container. Kubernetes doesn’t even know what a container is. The container runtime runs the container inside of Kubernetes and said runtime talks to the Kubelet (more on Kubelets later) over a Unix socket using the CRI (Container Runtime Interface… more on that later as well) protocol.
