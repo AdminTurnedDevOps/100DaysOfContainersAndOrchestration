@@ -4,7 +4,7 @@ Your go-to open source repo to learn containers (Docker, Podman, etc.) and Orche
 [![GitHub Repo stars](https://img.shields.io/github/stars/AdminTurnedDevOps/100DaysOfContainersAndOrchestration)](https://github.com/AdminTurnedDevOps/100DaysOfContainersAndOrchestrations)
 
 ## WIP
-More to come! This project is a WIP (started January 3rd, 2023).
+More to come! This project is a WIP (started January 3rd, 2023). Please note that the days are listed below, but are not completed yet.
 
 ## Why?
 Containers, orchestration, and the overall landscape of running modern applications is changing.
