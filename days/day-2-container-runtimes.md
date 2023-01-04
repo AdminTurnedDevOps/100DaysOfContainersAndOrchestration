@@ -27,7 +27,7 @@ The runtime is what’s responsible for running the container. Without it, a con
 
 You’ll be diving more into this later on in the series, but at a high level, let’s look at the screenshot below running the `docker run` command.
 
-![Screenshot](1.png)
+![Screenshot](../images/1.png)
 
 What is this command doing in the background? How is a container actually running? 
 
