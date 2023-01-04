@@ -66,11 +66,45 @@ Containers work in isolation and by specifying resources for each container by t
 **Namespaces**, not to be confused with Kubernetes Namespaces (although it’s where k8s gets Namespaces from), allow you to isolate workloads and segregate them. It partitions Linux resources in a way that one set of processes see’s an entirely separate set of processes. Those “processes”, in this case, are containers.
 
 ## Container Use Cases
+Here’s the thing about containers - sometimes they may not fit what you’re looking for.
+
+Arguably, and usually, they do, but sometimes they don’t.
+
+For example, using Serverless or Wasm (Web Assembly) may be a better option for your particular use case. It really all depends on what you’re trying to do.
+
+Because of that, here are some good use cases where containers come into play.
+
+1. Faster testing
+2. Faster development
+3. Utilized across multiple systems
+4. Orchestration
+
+From a testing perspective, there’s no denying that running a container locally to test a particular set of functionality is a far superior option in comparison to creating an entire virtual machine, installing/updating everything needed on the virtual machine, and then testing the application. Not only are containers faster in this instance, but they take up a lot less real estate. Same rules apply for faster development. If you have the smallest form factor to test and build functionality compared to needing a VM to do the same thing, development is far quicker.
+
+Another huge use case with containers is that they’re usable across literally any system. Windows, and distribution of Linux, and any cloud. In fact, most (at least the big) cloud providers have services specifically to run containers. Once a container is built, it can run anywhere. It’s vendor agnostic.
+
+Last but certainly not least, orchestrating containers is a far superior option from an ease of use perspective (containers and orchestration isn’t easy, it’s just more straightforward) in comparison to running applications on a VM. Orchestration systems give engineers repeatability that they don’t even have to build (self-healing, scheduling, declarative interaction, etc.).
+
+In short, containers are great if you want to develop and test fast.
 
 ## Containers On Linux and Windows
+As mentioned above, containers can run on both Windows and Linux. Typically, you’ll see containers running as Linux containers, but Windows containers still very much exist and are still being developed (I recently did a podcast episode with two engineers at Microsoft that focus on Windows containers).
+
+You’ll usually see Windows containers for legacy applications as many new apps from a “Windows” perspective are built with .NET Core and other open-source systems.
+
+Unless you’re building for a specific use case (like a legacy Windows app or an ARM app), you should default to Linux containers as they are the most widely adopted.
 
 ## Where Do Microservices Fit In?
+Microservices should most likely be an entire day in this series in itself. However, this series isn’t necessarily geared towards microservices (maybe there should be a series that is?).
 
-## Container Runtimes
+Sometimes you’ll see containers and microservices put into the same category.
 
-## Business Case For Containers
+The truth is, that’s simply not the case. You can run containers that aren’t a microservice. In fact, many containers that you see out there aren’t microservices.
+
+Microservices, in short, are applications that don’t have dependencies on other parts of an application to run properly.
+
+It’s often defined as “loosely coupled”.
+
+Microservices are all about having independent services.
+
+It allows for updating and working on a particular part of an application much easier. It also makes deploying a new version of the application much easier. One of the biggest benefits for microservices is that you can deploy one part of the app without touching the other part of the app, which results in not having to update the entire stack at the same time.
