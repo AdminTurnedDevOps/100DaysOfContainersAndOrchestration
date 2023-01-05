@@ -1,5 +1,9 @@
 ![Screenshot](images/100Days.png)
 
+<p align="center">
+ <img src="images/100Days.png?raw=true" alt="100Days Logo" width="50%" height="50%" />
+</p>
+
 # 100DaysOfContainersAndOrchestration
 Your go-to open source repo to learn containers (Docker, Podman, etc.) and Orchestration (Kubernetes, ECS, etc.) from start to finish.
 
