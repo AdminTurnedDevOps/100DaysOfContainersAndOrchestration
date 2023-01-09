@@ -67,7 +67,7 @@ Don't worry about doing anything with the app right now as you'll learn everythi
 - [Day 2 - Container runtimes](https://github.com/AdminTurnedDevOps/100DaysOfContainersAndOrchestration/blob/main/days/day-2-container-runtimes.md): COMPLETE
 - [Day 3 - Getting Started With Docker on Linux and Windows](https://github.com/AdminTurnedDevOps/100DaysOfContainersAndOrchestration/blob/main/days/day-3-Getting-Started-With-Docker-on-Linux.md): COMPLETE
 - [Day 4 - Docker desktop](https://github.com/AdminTurnedDevOps/100DaysOfContainersAndOrchestration/blob/main/days/day-4-docker-desktop.md): COMPLETE
-- [Day 5 - Building Docker Container Images](https://github.com/AdminTurnedDevOps/100DaysOfContainersAndOrchestration/blob/main/days/day-5-building-docker-container-images.md)
+- [Day 5 - Building Docker Container Images](https://github.com/AdminTurnedDevOps/100DaysOfContainersAndOrchestration/blob/main/days/day-5-building-docker-container-images.md): COMPLETE
 - [Day 6 - Running containers]()
 - [Day 7 - Docker networking]()
 - [Day 8 - Docker storage]()
