@@ -28,7 +28,13 @@ The different is that all of the above isn't running on a server. It's "installe
 If you have an infrastructure background, a Docker Image can be thought of as a golden image. It holds everything you need to run the application/workload of your choosing.
 
 ## Showcasing An App
+For the purposes of setting up a Dockerfile, and quite frankly, for this entire series, there must be an app that exists.
 
+Otherwise, you wouldn’t have anything to containerize and deploy.
+
+For the purposes of this entire series, you’ll be utilizing a GoWebAPI that I built, which you can find here: https://github.com/AdminTurnedDevOps/GoWebAPI
+
+Copy/fork/clone the GoWebAPI and save it locally.
 ## Dockerfile Properties/Instructions
 Below goes over the usual properties that you’ll see in a Dockerfile. For the full explanation, check out the link found [here](https://www.notion.so/Day-5-49a95a177e834146afb31de6cdbc61f8).
 
@@ -91,6 +97,51 @@ HEALTHCHECK --interval=5m --timeout=3s \
 ```
 
 ## Building A Dockerfile
+In the first section, **What Are Docker Container Images**, you learned about what a container image is. Now, you’ll learn about how to create one.
 
+To create a Dockerfile, you’ll need to write out the text-based instruction, which contains all of the commands/instructions needed to run your application.
+
+First, in any text editor (I’m using VSCode), create a new file and call it `Dockerfile`.
+
+![screenshot](../images/16.png)
+
+Next, add the following contents. What the Dockerfile below is doing is:
+
+- Utilizing the `golang` base image
+- Creates a new directory to store the contents of the app
+- Setting the `app` directory as the working directory
+- Building the Go app and placing the binary in the working directory
+- Exposing port `8080`
+- Running the binary
+
+```jsx
+FROM golang:latest
+
+RUN mkdir /app
+
+ADD . /app
+
+WORKDIR /app
+
+RUN go build -o main .
+
+EXPOSE 8080
+
+CMD [ "/app/main" ]
+```
+
+You can also open the existing Dockerfile in the GoWebAPI and see the same instructions as above.
 ## Building The Container Image
+Once you have the Dockerfile, building the container image is only one command.
 
+```jsx
+docker build -t gowebapi .
+```
+
+The `-t` flag is for the tag to tag/name the container image.
+
+The `.` signifies that the Dockerfile is in your existing directory (`cd` to the right location if not).
+
+You’ll then see an output similar to the screenshot below.
+
+![screenshot](../images/17.png)
