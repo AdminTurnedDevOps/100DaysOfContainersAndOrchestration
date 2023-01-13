@@ -43,6 +43,9 @@ Let’s go over each.
 
 1. Bridge is the default network driver. This method is common when running containers in a standalone (like your `localhost`) environment.
 2. Host is also used for standalone containers which removes network isolation between container networking and the host.
+
+If you use the hostnetwork mode for a container, that container is not isolated from the hosts network.
+
 3. Overlays connect multiple Docker daemons together and enable Docker Swarm services to communicate (you’ll learn about Swarm on another day).
 4. Ipvlan are VLANs for container networking (both ipv4 and ipv6).
 5. Macvlan networks allow you to assign a MAC address to a container.
@@ -95,8 +98,6 @@ If you try to access the container, you’ll see the following.
 Why?
 
 Because that’s not the port that the application is listening on.
-
-## Host Networking
 
 ## What About Swarm?
 We're going to be discussing Swarm on a full day, so don't dive too deep right now (of course, Google around if you're curious). I just wanted to bring it up as it is a part of Docker and overall networking, but it does require a full day.
