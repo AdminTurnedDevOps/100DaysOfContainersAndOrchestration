@@ -62,7 +62,7 @@ You’re adding to the base container image that you’re using, and that “add
 
 Take a look at the screenshot below.
 
-![screenshot](..images/22.png)
+![screenshot](../images/22.png)
 
 Notice how at the end it says `exporting to image` and `exporting layers`.
 
