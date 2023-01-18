@@ -70,7 +70,7 @@ Don't worry about doing anything with the app right now as you'll learn everythi
 - [Day 5 - Building Docker Container Images](https://github.com/AdminTurnedDevOps/100DaysOfContainersAndOrchestration/blob/main/days/day-5-building-docker-container-images.md): COMPLETE
 - [Day 6 - Running Docker Containers](https://github.com/AdminTurnedDevOps/100DaysOfContainersAndOrchestration/blob/main/days/day-6-running-container-images.md): COMPLETE
 - [Day 7 - Docker networking](https://github.com/AdminTurnedDevOps/100DaysOfContainersAndOrchestration/blob/main/days/day-7-docker-container-networking.md): COMPLETE
-- [Day 8 - Docker storage](https://github.com/AdminTurnedDevOps/100DaysOfContainersAndOrchestration/blob/main/days/day-8-docker-storage.md)
+- [Day 8 - Docker storage](https://github.com/AdminTurnedDevOps/100DaysOfContainersAndOrchestration/blob/main/days/day-8-docker-storage.md): COMPLETE
 - [Day 9 - Docker security]()
 - [Day 10 - Docker registries]()
 - [Day 11 - Docker Compose]()
