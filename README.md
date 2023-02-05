@@ -72,7 +72,7 @@ Don't worry about doing anything with the app right now as you'll learn everythi
 - [Day 7 - Docker networking](https://github.com/AdminTurnedDevOps/100DaysOfContainersAndOrchestration/blob/main/days/day-7-docker-container-networking.md): COMPLETE
 - [Day 8 - Docker storage](https://github.com/AdminTurnedDevOps/100DaysOfContainersAndOrchestration/blob/main/days/day-8-docker-storage.md): COMPLETE
 - [Day 9 - Docker security](https://github.com/AdminTurnedDevOps/100DaysOfContainersAndOrchestration/blob/main/days/day-9-docker-security.md): COMPLETE
-- [Day 10 - Docker registries]()
+- [Day 10 - Docker registries](https://github.com/AdminTurnedDevOps/100DaysOfContainersAndOrchestration/blob/main/days/day-10-docker-registries.md): COMPLETE
 - [Day 11 - Docker Compose]()
 - [Day 12 - Docker Swarm]()
 - [Day 13 - Scanning docker containers and images]()
